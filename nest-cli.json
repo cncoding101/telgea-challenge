@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "monorepo": true,
+  "projects": {
+    "provider-integration": {
+      "type": "application",
+      "root": "services/provider-integration",
+      "entryFile": "src/main",
+      "sourceRoot": "./",
+      "compilerOptions": {
+        "tsConfigPath": "services/provider-integration/tsconfig.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "../../base-tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "emitDeclarationOnly": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "../../dist/services/provider-integration",
+    "noImplicitAny": false,
+    "strictBindCallApply": false
+  }
+}
