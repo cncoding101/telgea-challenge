@@ -18,4 +18,4 @@ const convertRestToInternalFormat = (payload: any): BillingReport => {
   };
 };
 
-export { convertSoapToInternalFormat, convertRestToInternalFormat };
+export { convertRestToInternalFormat };

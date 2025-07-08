@@ -21,6 +21,10 @@ yarn
 To start the application in development mode:
 
 ```bash
+docker compose up -d --build
+```
+
+```bash
 yarn start:dev
 ```
 
