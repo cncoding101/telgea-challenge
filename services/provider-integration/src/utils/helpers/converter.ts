@@ -1,21 +1,5 @@
 import { BillingReport } from '../../billing-report/schema/billing-report.schema';
 
-const convertSoapToInternalFormat = (xml: string): BillingReport => {
-  const body = xml['soapenv:Envelope']['soapenv:Body']['sms:ChargeSMS'];
-  return {
-    telgea_user_id: body['sms:UserID'],
-    msisdn: body['sms:PhoneNumber'],
-    sms_charges: [
-      {
-        message_id: body['sms:MessageID'],
-        timestamp: body['sms:Timestamp'],
-        amount: parseFloat(body['sms:ChargeAmount']),
-        currency: body['sms:Currency'],
-      },
-    ],
-  };
-};
-
 const convertRestToInternalFormat = (payload: any): BillingReport => {
   return {
     telgea_user_id: payload.user_id,

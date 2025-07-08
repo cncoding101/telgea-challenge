@@ -1,5 +1,3 @@
-// src/common/middleware/xml-body-parser.middleware.ts
-
 import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
 import bodyParser from 'body-parser';
