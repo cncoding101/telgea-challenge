@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  providerdb:
+    image: mongo
+    container_name: provider-db
+    restart: always
+    ports:
+      - '27017:27017'
+    volumes:
+      - provider_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: providerdb
+
+volumes:
+  provider_data:

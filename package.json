@@ -12,7 +12,7 @@
   "private": true,
   "scripts": {
     "prepare": "husky",
-    "start:services:dev": "concurrently \"nest start provider-integration\""
+    "start:dev": "concurrently \"yarn workspace @monorepo/provider start:dev\""
   },
   "workspaces": [
     "services/**/*"
